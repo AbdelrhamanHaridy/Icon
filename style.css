@@ -1,0 +1,500 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  text-align: center;
+  background-color: #2d2f35;
+}
+
+.sm a{
+  display: inline-block;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: #f56a79;
+  margin: 0 16px;
+  transition: .4s linear;
+  position: relative;
+}
+
+.sm a::before, .sm a::after{
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: .4s linear;
+}
+
+.sm a:hover{
+  transform: scale(.8);
+}
+
+.sm a:hover::before{
+  border-left: 4px solid;
+  border-right: 4px solid;
+  transform: skewX(25deg);
+  border-radius: 50%
+}
+
+.sm a:hover::after{
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  transform: skewY(-25deg);
+  border-radius: 50%
+
+}
+@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.facebook .fa {
+  color: #3b5998;
+}
+.social-btns .btn.twitter:before {
+  background-color: #3cf;
+}
+.social-btns .btn.twitter .fa {
+  color: #3cf;
+}
+.social-btns .btn.google:before {
+  background-color: #dc4a38;
+}
+.social-btns .btn.google .fa {
+  color: #dc4a38;
+}
+.social-btns .btn.dribbble:before {
+  background-color: #f26798;
+}
+.social-btns .btn.dribbble .fa {
+  color: #f26798;
+}
+.social-btns .btn.skype:before {
+  background-color: #00aff0;
+}
+.social-btns .btn.skype .fa {
+  color: #00aff0;
+}
+.social-btns .btn.telegram .fa {
+  color: #0278ae;
+}
+.social-btns .btn.telegram:before {
+  background-color: #0278ae;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.social-btns {
+  height: 90px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  opacity: 0.99;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 38px;
+  vertical-align: middle;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: sans-serif;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+
+
+@font-face {
+  font-family: "Genericons";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+[class*=genericon] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Genericons";
+  text-decoration: inherit;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
+}
+
+/* IE7 */
+[class*=genericon] {
+  *overflow: auto;
+  *zoom: 1;
+  *display: inline;
+}
+
+.container {
+  margin: 100px auto;
+}
+
+.accordion {
+  width: 100%;
+  min-width: 950px;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 200px;
+  font-size: 0;
+}
+
+.tabs {
+  display: inline-block;
+  width: 80px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  -webkit-transition: all 0.4s 0.1s;
+  -webkit-transition-delay: all 0.4s 0.1s ease-in-out;
+  -moz-transition: all 0.4s 0.1s ease-in-out;
+  -o-transition: all 0.4s 0.1s ease-in-out;
+  transition: all 0.4s 0.1s ease-in-out;
+}
+.tabs:hover {
+  width: 450px;
+}
+.tabs:hover .social-links a:before {
+  margin-left: -100px;
+}
+.tabs:hover .social-links a:after {
+  margin-left: -5px;
+}
+.tabs .paragraph {
+  position: relative;
+  width: 360px;
+  margin-left: 80px;
+  padding: 50px 0 0 10px;
+  height: 200px;
+  background: #fff;
+}
+.tabs .paragraph h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.tabs .paragraph p {
+  font-size: 0.88em;
+  line-height: 1.5em;
+  padding-right: 30px;
+}
+
+.social-links {
+  display: block;
+}
+.social-links a {
+  display: block;
+  text-indent: -9999px;
+  font-size: 0;
+  line-height: 0;
+}
+.social-links a:before, .social-links a:after {
+  -webkit-transition: all 0.4s 0.1s;
+  -webkit-transition-delay: ease-in-out;
+  -moz-transition: all 0.4s 0.1s ease-in-out;
+  -o-transition: all 0.4s 0.1s ease-in-out;
+  transition: all 0.4s 0.1s ease-in-out;
+  width: 80px;
+  height: 200px;
+  position: absolute;
+  text-indent: 0;
+  padding-top: 90px;
+  padding-left: 25px;
+  display: block;
+  font: normal 30px Genericons;
+  color: rgb(255, 255, 255);
+}
+.social-links a:after {
+  font-size: 48px;
+  padding-left: 20px;
+  padding-top: 80px;
+  margin-left: 85px;
+}
+
+.twitter-icon a:before, .twitter-icon a:after {
+  content: "";
+}
+.twitter-icon a:after {
+  background-image: -owg-linear-gradient(#7adcf9, #4bc9f5);
+  background-image: -webkit-linear-gradient(#7adcf9, #4bc9f5);
+  background-image: -moz-linear-gradient(#7adcf9, #4bc9f5);
+  background-image: -o-linear-gradient(#7adcf9, #4bc9f5);
+  background-image: linear-gradient(#7adcf9, #4bc9f5);
+}
+
+.facebook-icon a:before, .facebook-icon a:after {
+  content: "";
+}
+.facebook-icon a:after {
+  background-image: -owg-linear-gradient(#548abf, #295b9e);
+  background-image: -webkit-linear-gradient(#548abf, #295b9e);
+  background-image: -moz-linear-gradient(#548abf, #295b9e);
+  background-image: -o-linear-gradient(#548abf, #295b9e);
+  background-image: linear-gradient(#548abf, #295b9e);
+}
+
+.linkedin-icon a:before, .linkedin-icon a:after {
+  content: "";
+}
+.linkedin-icon a:after {
+  background-image: -owg-linear-gradient(#00a9cd, #0083b4);
+  background-image: -webkit-linear-gradient(#00a9cd, #0083b4);
+  background-image: -moz-linear-gradient(#00a9cd, #0083b4);
+  background-image: -o-linear-gradient(#00a9cd, #0083b4);
+  background-image: linear-gradient(#00a9cd, #0083b4);
+}
+
+.insta-icon a:before, .insta-icon a:after {
+  content: "";
+}
+.insta-icon a:after {
+  background-image: -owg-linear-gradient(#c77653, #bd6d4b);
+  background-image: -webkit-linear-gradient(#f08a5d, #bd6d4b);
+  background-image: -moz-linear-gradient(#f08a5d, #bd6d4b);
+  background-image: -o-linear-gradient(#f08a5d, #bd6d4b);
+  background-image: linear-gradient(#f08a5d, #bd6d4b);
+}
+
+.youtube-icon a:before, .youtube-icon a:after {
+  content: "";
+}
+.youtube-icon a:after {
+  background-image: -owg-linear-gradient(#df192a, #c41222);
+  background-image: -webkit-linear-gradient(#df192a, #c41222);
+  background-image: -moz-linear-gradient(#df192a, #c41222);
+  background-image: -o-linear-gradient(#df192a, #c41222);
+  background-image: linear-gradient(#df192a, #c41222);
+}
+
+.tumblr-icon a:before, .tumblr-icon a:after {
+  content: "";
+}
+.tumblr-icon a:after {
+  background-image: -owg-linear-gradient(#283e56, #325372);
+  background-image: -webkit-linear-gradient(#283e56, #325372);
+  background-image: -moz-linear-gradient(#283e56, #325372);
+  background-image: -o-linear-gradient(#283e56, #325372);
+  background-image: linear-gradient(#283e56, #325372);
+}
+
+.dribbble-icon a:before, .dribbble-icon a:after {
+  content: "";
+}
+.dribbble-icon a:after {
+  background-image: -owg-linear-gradient(#e03a70, #f189b8);
+  background-image: -webkit-linear-gradient(#e03a70, #f189b8);
+  background-image: -moz-linear-gradient(#e03a70, #f189b8);
+  background-image: -o-linear-gradient(#e03a70, #f189b8);
+  background-image: linear-gradient(#e03a70, #f189b8);
+}
+/* Wrapper */
+.icon-button {
+  background-color: white;
+  border-radius: 3.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.0rem;
+  height: 3.6rem;
+  line-height: 3.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 3.6rem;
+}
+
+/* Circle */
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+}
+.icon-button:hover span {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 3.6rem;
+  margin: -1.8rem;
+}
+.twitter span {
+  background-color: #4099ff;
+}
+.facebook span {
+  background-color: #3B5998;
+}
+.google-plus span {
+  background-color: #db5a3c;
+}
+.fa-linkedin span {
+  background-color: #213e3b;
+}
+.fa-instagram span {
+  background-color: #ee6f57;
+}
+.fa-telegram span {
+  background-color: #0278ae;
+}
+/* Icons */
+.icon-button i {
+  background: none;
+  color: white;
+  height: 3.6rem;
+  left: 0;
+  line-height: 3.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 3.6rem;
+  z-index: 10;
+}
+.icon-button .fa-twitter {
+  color: #4099ff;
+}
+.icon-button .fa-facebook {
+  color: #3B5998;
+}
+.icon-button .fa-google-plus {
+  color: #db5a3c;
+}
+.icon-button .fa-linkedin {
+  color: #213e3b;
+}
+.icon-button .fa-instagram {
+  color: #ee6f57;
+}
+.icon-button .fa-telegram  {
+  color: #0278ae;
+}
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-facebook,
+.icon-button:hover .fa-google-plus, 
+.icon-button:hover .fa-linkedin, 
+.icon-button:hover .fa-instagram ,
+.icon-button:hover .fa-telegram { 
+  color: white;
+}
